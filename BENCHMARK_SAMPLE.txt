@@ -1,0 +1,13 @@
+healthy {'surface_health': 0.95, 'latent_health': 0.8875, 'observability_gap': 0.06249999999999996, 'masking_strength': 0.06249999999999996, 'coverage': 0.0, 'hidden_failure': False, 'contributions': {'queue_growth': 0.025, 'retry_rate': 0.0375, 'replica_divergence': 0.02, 'correction_load': 0.03}}
+masked {'surface_health': 0.95, 'latent_health': 0.3225, 'observability_gap': 0.6275, 'masking_strength': 0.6275, 'coverage': 1.0, 'hidden_failure': True, 'contributions': {'queue_growth': 0.18, 'retry_rate': 0.17, 'replica_divergence': 0.1525, 'correction_load': 0.175}}
+visible {'surface_health': 0.5, 'latent_health': 0.3225, 'observability_gap': 0.1775, 'masking_strength': 0.1775, 'coverage': 1.0, 'hidden_failure': False, 'contributions': {'queue_growth': 0.18, 'retry_rate': 0.17, 'replica_divergence': 0.1525, 'correction_load': 0.175}}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
